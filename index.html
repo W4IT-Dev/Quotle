@@ -4,15 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quotly</title>
+    <title>Quotle</title>
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="kaios-native-ui.css">
+    <script src="kaios-native-ui.js"></script>
 </head>
 
 <body onload="getQuote();" tabindex="1">
-    <div id="quote"></div>
-    <input id="guess" type="text" placeholder="Input author" tabindex="1">
+    <div id="app">
+        <div id="header">Quotle</div>
+        <div class="kui-toast">
+            <p class="kui-pri"></p>
+          </div>
+        <div class="content">
+            <div class="list-item focusable" tabindex="0" id="e">
+                <p id="quote" class="list-item__text" >Loading quote...</p>
+              </div>
+            <div class="input-container">
+                <label class="input-container__label">Guess author</label>
+                <input id="guess" type="text" tabindex="0" class="input-container__input focusable" />
+              </div>
+        </div>
+        <div class="softkeys">
+            <div class="softkey softkey-left">New Quote</div>
+            <div class="softkey softkey-center">CHECK</div>
+            <div class="softkey softkey-right">Hint</div>
+        </div>
+    </div>
 </body>
 
 </html>

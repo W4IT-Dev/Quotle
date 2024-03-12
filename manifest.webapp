@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "name": "quotly",
+  "name": "quotle",
   "description": "Guess the author of a random quote",
   "type": "web",
   "launch_path": "/index.html",
@@ -10,12 +10,12 @@
   },
   "developer": {
     "name": "W4IT Dev",
-    "url": "https://w4it-dev.github,io/website/"
+    "url": "https://github.com/w4it-dev/quotle/"
   },
   "locales": {
     "en-US": {
-      "name": "Quotly",
-      "subtitle": "Guess the author of a random quote",
+      "name": "Quotle",
+      "subtitle": "Guess the author of a given quote",
       "description": "You'll be given a random quote, and you'll have to guess the author."
     }
   },
