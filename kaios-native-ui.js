@@ -3,7 +3,6 @@ let classesWithColoredParents =
 
 const callFunction = (callback, e) => {
     let element = e.target;
-    //if element has any of those classes in regex then its parent will change class.
     if (element.className && element.className.match(classesWithColoredParents))
         callback(element.parentElement);
 };
@@ -17,7 +16,8 @@ window.addEventListener("blur", (e) => callFunction(blur, e), true);
 
 function showToast(text, time, color) {
     const toast = document.querySelector(".kui-toast")
-    toast.style.background = "#"+color
+    toast.style.background = "#" + color
+    document.querySelector("meta[name=theme-color]").setAttribute("content", '#' + color);
     toast.style.display = "block";
     document.querySelector(".kui-pri").innerHTML = text;
     setTimeout(function () {
@@ -26,6 +26,7 @@ function showToast(text, time, color) {
             toast.style.display = "none";
             toast.classList.remove("byetoast");
         }, 500);
+        document.querySelector("meta[name=theme-color]").setAttribute("content", '#1f3374');
 
     }, time);
 }

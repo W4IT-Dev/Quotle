@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quotle</title>
+    <meta name="theme-color" content="#1f3374">
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -12,6 +13,8 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="kaios-native-ui.css">
     <script src="kaios-native-ui.js"></script>
+
+    <script src="kaiads.v5.min.js"></script>
 </head>
 
 <body onload="getQuote();" tabindex="1">
@@ -28,10 +31,11 @@
                 <label class="input-container__label">Guess author</label>
                 <input id="guess" type="text" tabindex="0" class="input-container__input focusable" />
               </div>
+              <div id="ad" class="list-item" ></div>
         </div>
         <div class="softkeys">
             <div class="softkey softkey-left">New Quote</div>
-            <div class="softkey softkey-center">CHECK</div>
+            <div class="softkey softkey-center"></div>
             <div class="softkey softkey-right">Hint</div>
         </div>
     </div>

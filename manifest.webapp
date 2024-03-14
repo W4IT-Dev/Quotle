@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "quotle",
   "description": "Guess the author of a random quote",
   "type": "web",
@@ -10,13 +10,13 @@
   },
   "developer": {
     "name": "W4IT Dev",
-    "url": "https://github.com/w4it-dev/quotle/"
+    "url": "https://github.com/W4IT-Dev/quotle/"
   },
   "locales": {
     "en-US": {
       "name": "Quotle",
-      "subtitle": "Guess the author of a given quote",
-      "description": "You'll be given a random quote, and you'll have to guess the author."
+      "subtitle": "Guess the author of a random quote",
+      "description": "Get inspired and build quote knowledge by guessing the author of given quotes daily."
     }
   },
   "theme_color": "#ffffff",
