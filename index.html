@@ -22,21 +22,44 @@
         <div id="header">Quotle</div>
         <div class="kui-toast">
             <p class="kui-pri"></p>
-          </div>
+        </div>
         <div class="content">
             <div class="list-item focusable" tabindex="0" id="e">
-                <p id="quote" class="list-item__text" >Loading quote...</p>
-              </div>
-            <div class="input-container">
-                <label class="input-container__label">Guess author</label>
-                <input id="guess" type="text" tabindex="0" class="input-container__input focusable" />
-              </div>
-              <div id="ad" class="list-item" ></div>
+                <p id="quote" class="list-item__text">Loading quote...</p>
+            </div>
+            <div class="separator">Who wrote this?</div>
+            <div id="guess">
+                <div class="radio-container">
+                    <p class="radio-container__text">Loading...</p>
+                    <input type="radio" name="guess" tabindex="1" class="focusable radio-container__input" />
+                    <div class="radio-container__radio"></div>
+                </div>
+                <div class="radio-container">
+                    <p class="radio-container__text">Loading...</p>
+                    <input type="radio" name="guess" tabindex="2" class="focusable radio-container__input" />
+                    <div class="radio-container__radio"></div>
+                </div>
+                <div class="radio-container">
+                    <p class="radio-container__text">Loading...</p>
+                    <input type="radio" name="guess" tabindex="3" class="focusable radio-container__input" />
+                    <div class="radio-container__radio"></div>
+                </div>
+                <div class="radio-container">
+                    <p class="radio-container__text">Loading...</p>
+                    <input type="radio" name="guess" tabindex="4" class="focusable radio-container__input" />
+                    <div class="radio-container__radio"></div>
+                </div>
+                <!-- <div class="input-container">
+                    <label class="input-container__label">Guess author</label>
+                    <input id="guess" type="text" tabindex="0" class="input-container__input focusable" />
+                </div> -->
+            </div>
+            <div id="ad" class="list-item"></div>
         </div>
         <div class="softkeys">
             <div class="softkey softkey-left">New Quote</div>
             <div class="softkey softkey-center"></div>
-            <div class="softkey softkey-right">Hint</div>
+            <div class="softkey softkey-right"></div>
         </div>
     </div>
 </body>

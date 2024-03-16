@@ -252,6 +252,10 @@ html {
     box-sizing: border-box
 }
 
+.list-item-indicator {
+    height: 4rem;
+}
+
 
 #header {
     line-height: 2.8rem;
@@ -313,15 +317,15 @@ html {
 }
 
 .list-item-indicator__indicator {
-    height: 1rem;
-    width: 1rem;
+    height: .9rem;
+    width: .9rem;
     position: absolute;
     right: 1.5rem;
     border: solid var(--item-subtext-color);
     border-width: 0 .2rem .2rem 0;
     display: inline-block;
-    transform: rotate(-45deg) translateY(-50%);
-    top: 50%
+    transform: rotate(-45deg);
+    /* top: 50% */
 }
 
 .list-item-indicator:focus>.list-item-indicator__indicator {

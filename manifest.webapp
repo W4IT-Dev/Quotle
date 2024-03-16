@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "quotle",
   "description": "Guess the author of a random quote",
   "type": "web",
